@@ -2,8 +2,14 @@ import React from 'react'
 
 const Bitcoin = () => {
   return (
-    <div>Bitcoin</div>
-  )
+		<div className="bg-white rounded-xl p-4">
+			<div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	);
 }
 
 export default Bitcoin

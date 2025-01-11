@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-		<div className='flex items-center justify-between px-5 p-4'>
+		<div className='flex items-center relative drop-shadow-lgshadow-2xl shadow-black justify-between px-5 p-4'>
 			<div>
 				<img src="" alt="Logo" />
 			</div>

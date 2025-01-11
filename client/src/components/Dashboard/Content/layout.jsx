@@ -12,11 +12,14 @@ import Team from "./Team/Team";
 
 const Content = () => {
 	return (
+		<div className="p-4 flex flex-col gap-4 " style={{backgroundColor:"rgb(239,242,245)"}}>
+			{/* Top SubNavbar */}
+			<SubNavbarOne className="" />
 
-      <div>
-        <SubNavbarOne />
-			<div className="flex ">
-				<div className="p-4 flex flex-col gap-4">
+			{/* Main Content Area */}
+			<div className="grid grid-cols-1 sm:grid-cols-[3fr,1fr] gap-4">
+				{/* Left Content */}
+				<div className="flex flex-col gap-4">
 					<Bitcoin />
 					<SubNavbarTwo />
 					<Performance />
@@ -25,12 +28,14 @@ const Content = () => {
 					<Tokenomics />
 					<Team />
 				</div>
+
+				{/* Right Sidebar */}
 				<div className="flex flex-col gap-4">
 					<GetStarted />
 					<TrendingCoins />
 				</div>
 			</div>
-      </div>
+		</div>
 	);
 };
 
