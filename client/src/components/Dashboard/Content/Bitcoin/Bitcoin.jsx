@@ -73,7 +73,11 @@ const Bitcoin = () => {
 		<div className="bg-white overflow-auto rounded-xl shadow-md p-6 min-w-full mx-auto">
 			<div className="mb-4">
 				<div className="font-semibold flex items-center gap-2 text-2xl">
-					<img className="w-8 h-8" src={"/src/assets/bit.png"} alt="Bitcoin" />
+					<img
+						className="w-8 h-8"
+						src={"/public/bit.png"}
+						alt="Bitcoin"
+					/>
 					Bitcoin <span className="font-light text-sm">BTC</span>
 					<span className="text-sm ml-5 font-normal bg-gray-500 text-white p-1 rounded-lg">
 						Rank #1
@@ -81,16 +85,15 @@ const Bitcoin = () => {
 				</div>
 				<div className="text-xl flex gap-6 items-center font-medium mt-2">
 					${bitcoinPrice.toFixed(2)}
-					
-						<div
-							className={`text-xs flex items-center font-semibold ${
-								dayChange > 0
-									? "text-green-500 bg-green-100 p-1 rounded"
-									: "text-red-500 bg-red-100 p-1 rounded"
-							}`}>
-							{dayChange > 0 ? "▲" : "▼"} {dayChange.toFixed(2)}%
+					<div
+						className={`text-xs flex items-center font-semibold ${
+							dayChange > 0
+								? "text-green-500 bg-green-100 p-1 rounded"
+								: "text-red-500 bg-red-100 p-1 rounded"
+						}`}>
+						{dayChange > 0 ? "▲" : "▼"} {dayChange.toFixed(2)}%
 					</div>
-						<p className="font-light text-sm">(24H)</p>
+					<p className="font-light text-sm">(24H)</p>
 				</div>
 			</div>
 			<hr className="mt-5" />

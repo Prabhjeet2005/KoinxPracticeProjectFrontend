@@ -4,7 +4,7 @@ const Header = () => {
   return (
 		<div className="flex items-center relative drop-shadow-lgshadow-2xl shadow-black justify-between px-5 p-4">
 			<div>
-				<img style={{ width: 90 }} src="/src/assets/images.png" alt="Logo" />
+				<img style={{ width: 90 }} src="/public/images.png" alt="Logo" />
 			</div>
 			<div className="flex font-semibold gap-6 items-center">
 				<div>Crypto Taxes</div>

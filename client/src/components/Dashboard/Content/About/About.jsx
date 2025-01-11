@@ -57,7 +57,7 @@ const About = () => {
 								color={
 									"bg-gradient-to-br from-green-400 to-blue-700 rounded-lg"
 								}
-								image={"/src/assets/ci1.png"}
+								image={"/public/ci1.png"}
 								heading={"Calculate Your Profits"}
 							/>
 						</div>
@@ -66,7 +66,7 @@ const About = () => {
 								color={
 									"bg-gradient-to-br from-orange-400 to-red-700 rounded-lg"
 								}
-								image={"/src/assets/ci2.png"}
+								image={"/public/ci1.png"}
 								heading={"Calculate your tax liability"}
 							/>
 						</div>

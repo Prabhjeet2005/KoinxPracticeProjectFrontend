@@ -160,7 +160,7 @@ const Performance = () => {
 						</div>
 						<div className="flex p-2 border-b items-center justify-between">
 							<div className="font-light text-sm">All-Time High</div>
-							<div className="text-sm font-medium">$69,044.77 (-75.65%)</div>
+							<div className="text-sm font-medium"><div>$69,044.77 <span className="text-red-500">(-75.65%)</span></div><div>Nov 10, 2021 (about 1 year ago)</div></div>
 						</div>
 						<div className="flex p-2 border-b items-center justify-between">
 							<div className="font-light text-sm">Market Cap Rank</div>
@@ -168,7 +168,7 @@ const Performance = () => {
 						</div>
 						<div className="flex p-2 border-b items-center justify-between">
 							<div className="font-light text-sm">All-Time Low</div>
-							<div className="text-sm font-medium">$67.81 (24719.8%)</div>
+							<div className="text-sm font-medium"><div>$67.81 <span className="text-green-400">(24719.8%)</span></div><div>Jul 06, 2013 (over 9 years ago)</div></div>
 						</div>
 					</div>
 				</div>

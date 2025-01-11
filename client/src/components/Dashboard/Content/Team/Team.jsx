@@ -13,18 +13,9 @@ const Team = () => {
 					mollitia.
 				</div>
 				<div className="flex flex-col gap-4 mt-4">
-					<TeamCard
-						image={"/src/assets/JohnSmith.png"}
-						name={"John Smith"}
-					/>
-					<TeamCard
-						image={"/src/assets/Elina.png"}
-						name={"Elina Williams"}
-					/>
-					<TeamCard
-						image={"/src/assets/John2.png"}
-						name={"John Smith"}
-					/>
+					<TeamCard image={"/public/JohnSmith.png"} name={"John Smith"} />
+					<TeamCard image={"/public/Elina.png"} name={"Elina Williams"} />
+					<TeamCard image={"/public/John2.png"} name={"John Smith"} />
 					<div className=" mt-5 sm:hidden overflow-auto flex">
 						<Footer />
 					</div>
