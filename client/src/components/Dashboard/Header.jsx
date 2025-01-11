@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const Header = () => {
-  return (
+	return (
 		<div className="flex items-center relative drop-shadow-lgshadow-2xl shadow-black justify-between px-5 p-4">
 			<div>
-				<img style={{ width: 90 }} src="/public/images.png" alt="Logo" />
+				<img style={{ width: 90 }} src="/images/images.png" alt="Logo" />
 			</div>
 			<div className="flex font-semibold gap-6 items-center">
 				<div>Crypto Taxes</div>
@@ -16,6 +16,6 @@ const Header = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Header
+export default Header;

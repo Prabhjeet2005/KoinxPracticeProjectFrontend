@@ -73,11 +73,7 @@ const Bitcoin = () => {
 		<div className="bg-white overflow-auto rounded-xl shadow-md p-6 min-w-full mx-auto">
 			<div className="mb-4">
 				<div className="font-semibold flex items-center gap-2 text-2xl">
-					<img
-						className="w-8 h-8"
-						src={"/public/bit.png"}
-						alt="Bitcoin"
-					/>
+					<img className="w-8 h-8" src={"/images/bit.png"} alt="Bitcoin" />
 					Bitcoin <span className="font-light text-sm">BTC</span>
 					<span className="text-sm ml-5 font-normal bg-gray-500 text-white p-1 rounded-lg">
 						Rank #1

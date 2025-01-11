@@ -14,7 +14,7 @@ const GetStarted = () => {
 					you to be more educated and aware of your tax reports
 				</div>
 				<div>
-					<img src="/public/getStartedimg.png" />
+					<img src="/images/getStartedimg.png" />
 				</div>
 				<button className="text-xs mb-4 font-semibold flex gap-1 items-center justify-center text-black py-2 px-2 bg-white rounded-lg">
 					Get Started For Free <EastIcon fontSize="" className="text-black " />
