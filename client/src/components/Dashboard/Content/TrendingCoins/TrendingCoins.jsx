@@ -47,7 +47,7 @@ const TrendingCoins = () => {
 							<img
 								src={coin.item.small}
 								alt={coin.item.name}
-								className="w-8 h-8"
+								className="w-8 h-8 rounded-full"
 							/>
 							<div>
 								<div className="font-medium">{coin.item.name}</div>
