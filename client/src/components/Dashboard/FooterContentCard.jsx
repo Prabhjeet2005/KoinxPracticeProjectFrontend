@@ -1,39 +1,56 @@
 import React from "react";
 
-const FooterContentCard = ({ heading, coin }) => {
+const FooterContentCard = React.memo(({ coin }) => {
+	const price = coin ? coin.price : 0;
+	const change = coin ? coin.change : 0;
+	const priceFormatted =
+		typeof price === "number" ? price.toLocaleString() : "0"; // Format price as a number
+	const changeFormatted = change.toFixed(2); // Format change to 2 decimal places
+
+	const coinIcon = coin ? coin.icon : "https://via.placeholder.com/24"; // Default icon for the coin
+	const coinName = coin ? coin.name : "Unnamed Coin"; // Default name if no coin name provided
+
 	return (
 		<div className="p-4 bg-white shadow rounded-lg flex flex-col gap-4">
-
-			{/* Coin Information */}
 			<div>
-				<div className="flex items-center w-full">
+				<div className="flex items-center w-full mb-2">
 					<div className="flex mr-2 items-center gap-2">
-						<img src={coin.icon} alt={coin.name} className="w-6 h-6" />
-						<span className="text-gray-700 font-medium">{coin.name}</span>
+						<img style={{borderRadius:"100%"}} src={coinIcon} alt={coinName} className="w-6 h-6" />
+						<span className="text-gray-700 font-medium">{coinName}</span>
 					</div>
+
 					<span
-						className={`text-sm bg-green-100 p-0.5 rounded font-medium ${
-							coin.change > 0 ? "text-green-500" : "text-red-500"
+						className={`text-sm p-0.5 rounded font-medium ${
+							change > 0
+								? "bg-green-100 text-green-500"
+								: "bg-red-100 text-red-500"
 						}`}>
-						{coin.change > 0 ? `+${coin.change}%` : `${coin.change}%`}
+						{change > 0 ? `+${changeFormatted}%` : `${changeFormatted}%`}
 					</span>
 				</div>
+
 				<div className="text-lg font-semibold text-gray-800">
-					${coin.price.toLocaleString()}
+					${priceFormatted}
 				</div>
 
-				{/* Placeholder for Chart */}
-				<div className="w-full h-12">
-					{/* Replace this div with a small chart or Sparkline */}
-					<div
-						className={`h-full rounded-md ${
-							coin.change > 0 ? "bg-green-100" : "bg-red-100"
-						}`}
-					/>
+				<div className="w-full h-12 mt-2">
+					{coin?.sparkline ? (
+						<img
+							src={coin.sparkline}
+							alt="Price Sparkline"
+							className="h-full w-full rounded-md"
+						/>
+					) : (
+						<div
+							className={`h-full rounded-md ${
+								change > 0 ? "bg-green-100" : "bg-red-100"
+							}`}
+						/>
+					)}
 				</div>
 			</div>
 		</div>
 	);
-};
+});
 
 export default FooterContentCard;

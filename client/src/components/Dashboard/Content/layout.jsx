@@ -12,14 +12,16 @@ import Team from "./Team/Team";
 
 const Content = () => {
 	return (
-		<div className="p-4 flex flex-col gap-4 " style={{backgroundColor:"rgb(239,242,245)"}}>
+		<div
+			className="p-4 flex flex-col gap-4 "
+			style={{ backgroundColor: "rgb(239,242,245)" }}>
 			{/* Top SubNavbar */}
 			<SubNavbarOne className="" />
 
 			{/* Main Content Area */}
-			<div className="grid grid-cols-1 sm:grid-cols-[3fr,1fr] gap-4">
+			<div className="flex flex-col md:flex-row gap-4">
 				{/* Left Content */}
-				<div className="flex flex-col gap-4">
+				<div className="flex md:w-[73%] flex-col gap-4">
 					<Bitcoin />
 					<SubNavbarTwo />
 					<Performance />
@@ -30,7 +32,7 @@ const Content = () => {
 				</div>
 
 				{/* Right Sidebar */}
-				<div className="flex flex-col gap-4">
+				<div className="flex md:w-[27%] flex-col gap-4">
 					<GetStarted />
 					<TrendingCoins />
 				</div>

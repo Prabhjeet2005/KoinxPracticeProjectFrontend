@@ -25,7 +25,7 @@ const Team = () => {
 						image={"/src/assets/John2.png"}
 						name={"John Smith"}
 					/>
-					<div className=" mt-5 sm:hidden flex">
+					<div className=" mt-5 sm:hidden overflow-auto flex">
 						<Footer />
 					</div>
 				</div>

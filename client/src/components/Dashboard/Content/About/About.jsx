@@ -8,7 +8,7 @@ const About = () => {
 				<div className="text-xl md:text-2xl font-semibold">About Bitcoin</div>
 				<div>
 					<div className="text-lg font-semibold mt-4">What is Bitcoin?</div>
-					<div className="text-sm md:text-base mt-2">
+					<div className="text-sm mt-2">
 						Bitcoin's price today is US$16,951.82, with a 24-hour trading volume
 						of $19.14 B. BTC is +0.36% in the last 24 hours. It is currently
 						-7.70% from its 7-day all-time high of $18,366.66, and 3.40% from
@@ -20,7 +20,7 @@ const About = () => {
 						<div className="text-lg font-semibold">
 							Lorem ipsum dolor sit amet
 						</div>
-						<div className="text-sm md:text-base mt-2">
+						<div className="text-sm  mt-2">
 							Lorem ipsum dolor sit amet consectetur. Aliquam placerat sit
 							lobortis tristique pharetra. Diam id et lectus urna et tellus.
 							aliquam dictum at. Viverra diam suspendisse enim facilisi diam ut
@@ -29,7 +29,7 @@ const About = () => {
 							sed. Quam scelerisque fermentum sapien morbi sodales odio sed
 							rhoncus.
 						</div>
-						<div className="text-sm md:text-base mt-2">
+						<div className="text-sm mt-2">
 							Diam praesent massa dapibus magna aliquam a dictumst volutpat.
 							Egestas vitae pellentesque auctor amet. Nunc sagittis libero
 							adipiscing cursus felis pellentesque interdum. Odio cursus
@@ -39,7 +39,7 @@ const About = () => {
 							Integer dignissim augue viverra nulla et quis lobortis phasellus.
 							Integer pellentesque enim convallis ultricies at.
 						</div>
-						<div className="text-sm md:text-base mt-2">
+						<div className="text-sm mt-2">
 							Fermentum hendrerit imperdiet nulla viverra faucibus. Sit aliquam
 							massa vel convallis duis ac. Mi adipiscing semper scelerisque
 							porttitor pulvinar nunc risus. Fermentum potenti iaculis lacinia
